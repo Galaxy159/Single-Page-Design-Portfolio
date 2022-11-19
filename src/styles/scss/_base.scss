@@ -1,0 +1,68 @@
+// Colors
+$color-blue: #755cde;
+$color-orange: #f6a560;
+$color-pink: #f39e9e;
+$color-red: #eb7565;
+$color-cyan: #61c4b7;
+$color-purple: #552049;
+$color-black: #030303;
+$color-gray: #7a746e;
+$color-white: #fff7f0;
+
+// Media
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: 480px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 5.1rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
