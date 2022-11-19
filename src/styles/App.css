@@ -1,0 +1,43 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 5.1rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}/*# sourceMappingURL=App.css.map */
