@@ -16,7 +16,9 @@
     margin: 0 auto;
     max-width: 28.5rem;
     @include respond(tablet) {
-      max-width: 57.3rem;
+      display: grid;
+      grid-template-columns: 57.3rem;
+      place-content: center;
     }
   }
   &__headline {

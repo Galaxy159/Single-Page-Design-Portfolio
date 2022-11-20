@@ -177,7 +177,9 @@ h3 {
 }
 @media (min-width: 720px) {
   .header__text {
-    max-width: 57.3rem;
+    display: grid;
+    grid-template-columns: 57.3rem;
+    place-content: center;
   }
 }
 .header__headline {
