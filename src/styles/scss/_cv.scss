@@ -9,7 +9,7 @@
   }
 
   @include respond(desktop) {
-    margin: 0 16.5rem 4.6rem;
+    margin: 0 16.5rem 4rem;
     column-gap: 12.5rem;
   }
   &__content {

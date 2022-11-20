@@ -321,7 +321,7 @@ h3 {
 }
 @media (min-width: 1110px) {
   .cv {
-    margin: 0 16.5rem 4.6rem;
+    margin: 0 16.5rem 4rem;
     -moz-column-gap: 12.5rem;
          column-gap: 12.5rem;
   }
