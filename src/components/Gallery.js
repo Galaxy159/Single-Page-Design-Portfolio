@@ -17,12 +17,10 @@ export default function Gallery() {
 
   function handleBtnRight() {
     setCurrentSlideX((prev) => (prev <= -1140 ? prev : prev - 285));
-    console.log({ currentSlideX });
   }
 
   function handleBtnLeft() {
     setCurrentSlideX((prev) => (prev >= 0 ? prev : prev + 285));
-    console.log({ currentSlideX });
   }
 
   return (
