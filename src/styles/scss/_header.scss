@@ -6,6 +6,12 @@
     padding: 0 4rem;
     margin-bottom: 6.4rem;
   }
+
+  @include respond(desktop) {
+    padding: 0;
+    margin-bottom: 8rem;
+  }
+
   &__text {
     margin: 0 auto;
     max-width: 28.5rem;
@@ -18,6 +24,10 @@
 
     @include respond(tablet) {
       margin-bottom: 2.7rem;
+    }
+
+    @include respond(desktop) {
+      margin-bottom: 2.3 rem;
     }
   }
 }

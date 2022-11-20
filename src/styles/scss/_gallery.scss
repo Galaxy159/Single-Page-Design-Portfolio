@@ -44,6 +44,10 @@
     @include respond(tablet) {
       margin-bottom: 12rem;
     }
+
+    @include respond(desktop) {
+      margin-bottom: 8rem;
+    }
     &--btn {
       background-color: $color-black;
       width: 6.4rem;

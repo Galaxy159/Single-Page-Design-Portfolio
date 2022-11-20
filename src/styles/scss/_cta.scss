@@ -7,8 +7,15 @@
 
   @include respond(tablet) {
     padding: 5.6rem 7.5rem 6.4rem;
-    margin-bottom: 5.6rem;
+    margin-bottom: 2.2rem;
     max-width: 69rem;
+  }
+  @include respond(desktop) {
+    max-width: 111rem;
+    paddiing: 8rem 9.5rem 8rem 6.5rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr min-content;
   }
   &__headline {
     color: $color-white;
@@ -16,6 +23,9 @@
 
     @include respond(tablet) {
       margin-bottom: 2.6rem;
+    }
+    @include respond(tablet) {
+      margin-bottom: 2.5rem;
     }
   }
   &__text {
@@ -25,12 +35,22 @@
     @include respond(tablet) {
       margin-bottom: 2.6rem;
     }
+
+    @include respond(desktop) {
+      padding-right: 18rem;
+      margin-bottom: 0;
+    }
   }
   &__btn {
     background-color: $color-red;
 
     &:hover {
       background-color: $color-orange;
+    }
+
+    @include respond(desktop) {
+      justify-self: end;
+      align-self: center;
     }
   }
 }

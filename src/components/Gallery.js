@@ -6,9 +6,11 @@ import slide5 from "../assets/image-slide-5.jpg";
 import btnLeft from "../assets/icon-arrow-left.svg";
 import btnRight from "../assets/icon-arrow-right.svg";
 import { useState } from "react";
+import useMediaQuery from "./hooks/useMediaQuery";
 
 export default function Gallery() {
-  const [currentSlideX, setCurrentSlideX] = useState(-1140);
+  const isDesktop = useMediaQuery("(min-width: 720px)");
+  const [currentSlideX, setCurrentSlideX] = useState(isDesktop ? -1140 : -570);
   const slides = [slide1, slide2, slide3, slide4, slide5];
 
   const translate = {
@@ -16,11 +18,27 @@ export default function Gallery() {
   };
 
   function handleBtnRight() {
-    setCurrentSlideX((prev) => (prev <= -2280 ? prev : prev - 570));
+    setCurrentSlideX((prev) =>
+      isDesktop
+        ? prev <= -2280
+          ? prev
+          : prev - 570
+        : prev <= -1140
+        ? prev
+        : prev - 285
+    );
   }
 
   function handleBtnLeft() {
-    setCurrentSlideX((prev) => (prev >= 0 ? prev : prev + 570));
+    setCurrentSlideX((prev) =>
+      isDesktop
+        ? prev >= 0
+          ? prev
+          : prev + 570
+        : prev >= 0
+        ? prev
+        : prev + 285
+    );
   }
 
   return (
@@ -32,7 +50,11 @@ export default function Gallery() {
             return (
               <li
                 key={index}
-                style={{ transform: `translateX(${570 * index}px)` }}
+                style={{
+                  transform: `translateX(${
+                    isDesktop ? 570 * index : 285 * index
+                  }px)`,
+                }}
                 className="gallery__track--slide"
               >
                 <img

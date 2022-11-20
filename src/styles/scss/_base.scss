@@ -17,7 +17,7 @@ $color-white: #fff7f0;
     }
   }
   @if $breakpoint == desktop {
-    @media (min-width: 900px) {
+    @media (min-width: 1110px) {
       @content;
     }
   }
