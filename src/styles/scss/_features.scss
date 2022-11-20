@@ -17,9 +17,6 @@
     margin-bottom: 13.6rem;
   }
   &__item {
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 3rem;
     border-radius: 0.8rem;
     padding: 2.4rem;
     height: 18.2rem;
@@ -31,6 +28,9 @@
       justify-self: end;
     }
     &--name {
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 3rem;
       color: white;
       justify-self: start;
     }

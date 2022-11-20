@@ -216,9 +216,6 @@ h3 {
   }
 }
 .features__item {
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 3rem;
   border-radius: 0.8rem;
   padding: 2.4rem;
   height: 18.2rem;
@@ -230,6 +227,9 @@ h3 {
   justify-self: end;
 }
 .features__item--name {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
   color: white;
   justify-self: start;
 }
