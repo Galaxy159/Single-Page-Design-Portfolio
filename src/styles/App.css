@@ -228,6 +228,9 @@ h3 {
 }
 .features__item--name {
   color: white;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3rem;
   justify-self: start;
 }
 .features__item--graphicDesign {
