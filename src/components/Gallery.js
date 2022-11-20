@@ -10,7 +10,8 @@ import useMediaQuery from "./hooks/useMediaQuery";
 
 export default function Gallery() {
   const isDesktop = useMediaQuery("(min-width: 720px)");
-  const [currentSlideX, setCurrentSlideX] = useState(isDesktop ? -1140 : -570);
+  const [currentSlideX, setCurrentSlideX] = useState(-1140);
+
   const slides = [slide1, slide2, slide3, slide4, slide5];
 
   const translate = {
