@@ -1,0 +1,22 @@
+.cta {
+  max-width: 34.3rem;
+  margin: 0 auto 2.4rem auto;
+  border-radius: 1rem;
+  background-color: $color-black;
+  padding: 4.9rem 2.4rem;
+  &__headline {
+    color: $color-white;
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    color: $color-white;
+    margin-bottom: 2.4rem;
+  }
+  &__btn {
+    background-color: $color-red;
+
+    &:hover {
+      background-color: $color-orange;
+    }
+  }
+}

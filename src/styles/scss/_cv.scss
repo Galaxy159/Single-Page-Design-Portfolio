@@ -1,0 +1,24 @@
+.cv {
+  margin-bottom: 10rem;
+  &__avatar {
+    margin-bottom: 4rem;
+    &--img {
+      height: 30rem;
+    }
+  }
+  &__headline {
+    padding-inline: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    padding-inline: 1.6rem;
+    margin-bottom: 2.4rem;
+  }
+  &__btn {
+    background-color: $color-red;
+
+    &:hover {
+      background-color: $color-orange;
+    }
+  }
+}

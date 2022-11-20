@@ -1,0 +1,17 @@
+.topbar {
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    height: 4.8rem;
+  }
+  &__btn {
+    background-color: $color-black;
+
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.features {
+  padding-block: 1.6rem 10rem;
+  max-width: 34.3rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+  &__item {
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+    height: 18.2rem;
+    max-width: 34.3rem;
+    display: grid;
+    align-content: space-between;
+    &--img {
+      justify-self: end;
+    }
+    &--name {
+      color: white;
+      justify-self: start;
+    }
+
+    &--graphicDesign {
+      background-color: $color-blue;
+      height: 36.4rem;
+      grid-column: 1 / -1;
+    }
+    &--uiux {
+      background-color: $color-orange;
+      max-width: 15.9rem;
+    }
+    &--apps {
+      background-color: $color-pink;
+      max-width: 15.9rem;
+    }
+    &--illustrations {
+      background-color: $color-red;
+      height: 15.8rem;
+      grid-column: 1 / -1;
+    }
+    &--photography {
+      background-color: $color-cyan;
+      grid-column: 1 / -1;
+    }
+    &--motionGraphics {
+      background-color: $color-purple;
+      grid-column: 1 / -1;
+    }
+  }
+}

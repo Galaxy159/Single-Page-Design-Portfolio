@@ -1,0 +1,50 @@
+.gallery {
+  margin: 0 auto 3.2rem;
+  overflow: hidden;
+  position: relative;
+  height: 18rem;
+
+  &__headline {
+    margin-bottom: 3.2rem;
+  }
+
+  &__track {
+    list-style: none;
+    transition: 0.5s ease-in-out;
+    &--slide {
+      position: absolute;
+      left: 0;
+      right: 0;
+      &-img {
+        height: 18rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    justify-content: center;
+    gap: 1.6rem;
+    margin-bottom: 10rem;
+    &--btn {
+      background-color: $color-black;
+      width: 6.4rem;
+      height: 6.4rem;
+      border-radius: 50%;
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: $color-blue;
+      }
+    }
+  }
+}
+
+.hide {
+  opacity: 0;
+}

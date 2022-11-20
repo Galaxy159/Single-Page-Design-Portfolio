@@ -33,14 +33,6 @@ export default function Features() {
           />
           <p className="features__item--name">Apps</p>
         </div>
-        <div className="features__item features__item--photography">
-          <img
-            src={photography}
-            alt="Design pattern"
-            className="features__item--img"
-          />
-          <p className="features__item--name">Photography</p>
-        </div>
         <div className="features__item features__item--illustrations">
           <img
             src={illustrations}
@@ -49,7 +41,14 @@ export default function Features() {
           />
           <p className="features__item--name">Illustrations</p>
         </div>
-
+        <div className="features__item features__item--photography">
+          <img
+            src={photography}
+            alt="Design pattern"
+            className="features__item--img"
+          />
+          <p className="features__item--name">Photography</p>
+        </div>
         <div className="features__item features__item--motionGraphics">
           <img
             src={motionGaraphics}
