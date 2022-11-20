@@ -20,6 +20,12 @@
       grid-template-columns: 57.3rem;
       place-content: center;
     }
+
+    @include respond(desktop) {
+      display: grid;
+      grid-template-columns: 70rem;
+      place-content: center;
+    }
   }
   &__headline {
     margin-bottom: 1.6rem;

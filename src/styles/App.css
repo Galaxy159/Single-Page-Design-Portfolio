@@ -182,6 +182,13 @@ h3 {
     place-content: center;
   }
 }
+@media (min-width: 1110px) {
+  .header__text {
+    display: grid;
+    grid-template-columns: 70rem;
+    place-content: center;
+  }
+}
 .header__headline {
   margin-bottom: 1.6rem;
 }
