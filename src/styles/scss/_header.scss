@@ -9,6 +9,7 @@
 
   @include respond(desktop) {
     padding: 0;
+    margin-bottom: 8rem;
   }
 
   &__text {
@@ -26,7 +27,7 @@
     }
 
     @include respond(desktop) {
-      margin-bottom: 2.3 rem;
+      margin-bottom: 2.3rem;
     }
   }
 }

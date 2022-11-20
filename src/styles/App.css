@@ -136,7 +136,7 @@ h3 {
 }
 @media (min-width: 1110px) {
   .topbar {
-    padding: 3.2rem 16.4rem 0;
+    padding: 3.4rem 16.4rem 0;
     margin-bottom: 6.4rem;
   }
 }
@@ -168,6 +168,7 @@ h3 {
 @media (min-width: 1110px) {
   .header {
     padding: 0;
+    margin-bottom: 8rem;
   }
 }
 .header__text {
@@ -189,7 +190,7 @@ h3 {
 }
 @media (min-width: 1110px) {
   .header__headline {
-    margin-bottom: 2.3 rem;
+    margin-bottom: 2.3rem;
   }
 }
 
