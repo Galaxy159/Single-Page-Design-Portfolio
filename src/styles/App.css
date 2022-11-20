@@ -115,6 +115,9 @@ h3 {
     width: 22.8rem;
   }
 }
+.btn:focus {
+  outline: 0;
+}
 
 .topbar {
   padding: 1.6rem 1.6rem 0;
@@ -133,8 +136,8 @@ h3 {
 }
 @media (min-width: 1110px) {
   .topbar {
-    padding: 3.4rem 16.4rem 0;
-    margin-bottom: 6.6rem;
+    padding: 3.2rem 16.4rem 0;
+    margin-bottom: 6.4rem;
   }
 }
 .topbar__logo {
@@ -165,7 +168,6 @@ h3 {
 @media (min-width: 1110px) {
   .header {
     padding: 0;
-    margin-bottom: 8rem;
   }
 }
 .header__text {
@@ -468,11 +470,13 @@ h3 {
 @media (min-width: 1110px) {
   .cta {
     max-width: 111rem;
+    height: 32rem;
     paddiing: 8rem 9.5rem 8rem 6.5rem;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr -webkit-min-content;
     grid-template-columns: 1fr min-content;
+    place-content: center;
   }
 }
 .cta__headline {

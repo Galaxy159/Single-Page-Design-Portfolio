@@ -12,10 +12,12 @@
   }
   @include respond(desktop) {
     max-width: 111rem;
+    height: 32rem;
     paddiing: 8rem 9.5rem 8rem 6.5rem;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr min-content;
+    place-content: center;
   }
   &__headline {
     color: $color-white;
