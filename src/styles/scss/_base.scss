@@ -94,6 +94,12 @@ h3 {
   }
 }
 
+*:focus {
+  outline: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
 .container {
   max-width: 37.5rem;
   margin: 0 auto;
