@@ -1,21 +1,49 @@
 .cv {
   margin-bottom: 10rem;
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(3, min-content);
+    text-align: left;
+    margin: 0 4rem 9rem;
+  }
   &__avatar {
     margin-bottom: 4rem;
+    @include respond(tablet) {
+      grid-row: 1 / 4;
+    }
     &--img {
       height: 30rem;
+      @include respond(tablet) {
+        height: 36.4rem;
+        transform: translateX(-8.4rem);
+      }
     }
   }
   &__headline {
     padding-inline: 1.6rem;
     margin-bottom: 2.4rem;
+    @include respond(tablet) {
+      transform: translateX(-2rem);
+      padding: 0;
+      margin-bottom: -2rem;
+    }
   }
   &__text {
     padding-inline: 1.6rem;
     margin-bottom: 2.4rem;
+    @include respond(tablet) {
+      padding: 0;
+      transform: translateX(-2rem);
+      margin-bottom: -1.5rem;
+    }
   }
   &__btn {
     background-color: $color-red;
+    @include respond(tablet) {
+      grid-column: 2 / 3;
+      transform: translateX(-2rem);
+    }
 
     &:hover {
       background-color: $color-orange;

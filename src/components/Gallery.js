@@ -8,7 +8,7 @@ import btnRight from "../assets/icon-arrow-right.svg";
 import { useState } from "react";
 
 export default function Gallery() {
-  const [currentSlideX, setCurrentSlideX] = useState(-570);
+  const [currentSlideX, setCurrentSlideX] = useState(-1140);
   const slides = [slide1, slide2, slide3, slide4, slide5];
 
   const translate = {
@@ -16,11 +16,11 @@ export default function Gallery() {
   };
 
   function handleBtnRight() {
-    setCurrentSlideX((prev) => (prev <= -1140 ? prev : prev - 285));
+    setCurrentSlideX((prev) => (prev <= -2280 ? prev : prev - 570));
   }
 
   function handleBtnLeft() {
-    setCurrentSlideX((prev) => (prev >= 0 ? prev : prev + 285));
+    setCurrentSlideX((prev) => (prev >= 0 ? prev : prev + 570));
   }
 
   return (
@@ -32,7 +32,7 @@ export default function Gallery() {
             return (
               <li
                 key={index}
-                style={{ transform: `translateX(${285 * index}px)` }}
+                style={{ transform: `translateX(${570 * index}px)` }}
                 className="gallery__track--slide"
               >
                 <img

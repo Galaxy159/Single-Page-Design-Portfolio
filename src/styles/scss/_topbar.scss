@@ -1,11 +1,21 @@
 .topbar {
-  padding: 1.6rem;
+  padding: 1.6rem 1.6rem 0;
+  margin-bottom: 3.2rem;
   display: grid;
   grid-template-columns: repeat(2, min-content);
   justify-content: space-between;
   align-items: center;
+
+  @include respond(tablet) {
+    padding: 3.4rem 4rem 0;
+    margin-bottom: 6.4rem;
+  }
   &__logo {
     height: 4.8rem;
+
+    @include respond(tablet) {
+      height: 6.4rem;
+    }
   }
   &__btn {
     background-color: $color-black;

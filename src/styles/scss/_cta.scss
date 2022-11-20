@@ -4,13 +4,27 @@
   border-radius: 1rem;
   background-color: $color-black;
   padding: 4.9rem 2.4rem;
+
+  @include respond(tablet) {
+    padding: 5.6rem 7.5rem 6.4rem;
+    margin-bottom: 5.6rem;
+    max-width: 69rem;
+  }
   &__headline {
     color: $color-white;
     margin-bottom: 2.4rem;
+
+    @include respond(tablet) {
+      margin-bottom: 2.6rem;
+    }
   }
   &__text {
     color: $color-white;
     margin-bottom: 2.4rem;
+
+    @include respond(tablet) {
+      margin-bottom: 2.6rem;
+    }
   }
   &__btn {
     background-color: $color-red;
