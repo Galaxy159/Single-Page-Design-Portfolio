@@ -14,4 +14,8 @@
     height: 5.6rem;
     width: 22.8rem;
   }
+
+  &:focus {
+    outline: 0;
+  }
 }
